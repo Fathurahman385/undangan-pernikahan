@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Undangan Pernikahan</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <section class="cover">
+      <p class="eyebrow">The Wedding of</p>
+      <h1>Raka <span>&</span> Aulia</h1>
+      <p class="date">20 Desember 2026</p>
+      <button type="button">Buka Undangan</button>
+    </section>
+
+   <!-- COUNTDOWN -->
+<section class="content countdown-section">
+    <h2>Menuju Hari Bahagia</h2>
+
+    <div class="countdown">
+        <div>
+            <span id="days">0</span>
+            <small>Hari</small>
+        </div>
+
+        <div>
+            <span id="hours">0</span>
+            <small>Jam</small>
+        </div>
+
+        <div>
+            <span id="minutes">0</span>
+            <small>Menit</small>
+        </div>
+
+        <div>
+            <span id="seconds">0</span>
+            <small>Detik</small>
+        </div>
+    </div>
+</section>
+      </section>
+
+      <section class="content">
+        <h2>Acara Pernikahan</h2>
+
+        <div class="event-list">
+          <div class="event-card">
+            <div class="event-icon">💍</div>
+            <h3>Akad Nikah</h3>
+            <p>20 Desember 2026</p>
+            <p>09.00 WIB</p>
+          </div>
+
+          <div class="event-card">
+            <div class="event-icon">🎉</div>
+            <h3>Resepsi</h3>
+            <p>20 Desember 2026</p>
+            <p>11.00 WIB</p>
+          </div>
+
+          <div class="event-card">
+            <div class="event-icon">📍</div>
+            <h3>Lokasi</h3>
+            <p>Gedung Pernikahan</p>
+            <p>Jl. Merdeka No. 123, Bandung</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="content">
+        <h2>Galeri</h2>
+
+        <div class="gallery">
+          <div class="gallery-item">Foto 1</div>
+          <div class="gallery-item">Foto 2</div>
+          <div class="gallery-item">Foto 3</div>
+        </div>
+      </section>
+
+      <!-- LOKASI -->
+      <section class="content">
+        <h2>Lokasi Acara</h2>
+
+        <p>Gedung Pernikahan</p>
+        <p>Jl. Contoh No. 123, Jakarta</p>
+
+        <a href="https://maps.google.com" target="_blank" class="maps-button">
+          📍 Buka Google Maps
+        </a>
+      </section>
+
+      <!-- RSVP -->
+      <section class="content rsvp">
+        <h2>Konfirmasi Kehadiran</h2>
+
+        <p>Mohon konfirmasi kehadiran Anda melalui WhatsApp.</p>
+
+        <a
+          href="https://wa.me/6281234567890?text=Halo%20Raka%20%26%20Aulia%2C%20saya%20akan%20hadir%20di%20acara%20pernikahan."
+          target="_blank"
+          class="wa-button"
+        >
+          💬 Konfirmasi via WhatsApp
+        </a>
+      </section>
+
+      <!-- MUSIK -->
+      <section class="content music-section">
+        <h2>Musik</h2>
+
+        <audio controls loop>
+          <source src="music/musik.mp3" type="audio/mpeg" />
+          Browser kamu tidak mendukung pemutar musik.
+        </audio>
+      </section>
+
+      <!-- UCAPAN TAMU -->
+      <section class="content guestbook">
+        <h2>Ucapan &amp; Doa</h2>
+
+        <input type="text" id="namaTamu" placeholder="Nama Anda" />
+
+        <textarea id="ucapanTamu" placeholder="Tulis ucapan dan doa..."></textarea>
+
+        <button onclick="kirimUcapan()">Kirim Ucapan</button>
+      </section>
+
+      <section class="content">
+        <h2>Terima Kasih</h2>
+        <p class="footer-note">
+          Merupakan suatu kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i dapat hadir di hari
+          bahagia kami. Kehadiran Anda adalah doa dan kebahagiaan yang sangat kami hargai.
+        </p>
+        <h2 style="margin-top: 24px;">Raka &amp; Aulia</h2>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
