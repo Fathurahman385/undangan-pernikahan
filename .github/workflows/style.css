@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    background: #f8f4ed;
+    color: #333;
+    text-align: center;
+}
+
+.cover {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.35),
+        rgba(0, 0, 0, 0.35)
+    ),
+    url("https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1200&q=80");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.cover p {
+    font-size: 14px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.cover h1 {
+    font-size: 48px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    animation: muncul 2s ease;
+}
+
+.cover button {
+    margin-top: 30px;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 30px;
+    background: #d4af37;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.content {
+    max-width: 700px;
+    margin: auto;
+    padding: 80px 25px;
+}
+
+.content h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+    color: #9b7b20;
+}
+
+.content h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #9b7b20;
+}
+
+.content p {
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.gallery div {
+    height: 180px;
+    background: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.foto-pengantin {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #d4af37;
+    margin-bottom: 20px;
+}
+
+.maps-button,
+.wa-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 22px;
+    background: #d4af37;
+    color: #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.maps-button:hover,
+.wa-button:hover {
+    background: #b8921d;
+}
+
+.music-section audio {
+    width: 100%;
+    max-width: 420px;
+    margin-top: 10px;
+}
+
+.guestbook {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.guestbook input,
+.guestbook textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #d9c7b0;
+    border-radius: 12px;
+    font-size: 16px;
+    font-family: inherit;
+    resize: vertical;
+    background: #fff;
+}
+
+.guestbook textarea {
+    min-height: 120px;
+}
+
+.guestbook button {
+    padding: 14px 24px;
+    border: none;
+    border-radius: 30px;
+    background: #d4af37;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .cover h1 {
+        font-size: 38px;
+    }
+
+    .content {
+        padding: 60px 20px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+@keyframes muncul {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* COUNTDOWN */
+.countdown-section {
+    background: #fffaf2;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.countdown div {
+    width: 75px;
+    padding: 15px 5px;
+    background: #ffffff;
+    border: 1px solid #d4af37;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.countdown span {
+    display: block;
+    font-size: 28px;
+    color: #9b7b20;
+    font-weight: bold;
+}
+
+.countdown small {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #555;
+}
+
+/* GOOGLE MAPS */
+.maps-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 13px 25px;
+    background: #d4af37;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+/* RSVP WHATSAPP */
+.wa-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 28px;
+    background: #25d366;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* UCAPAN TAMU */
+.guestbook input,
+.guestbook textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 14px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-family: inherit;
+}
+
+.guestbook textarea {
+    height: 120px;
+    resize: none;
+}
+
+.guestbook button {
+    padding: 13px 25px;
+    border: none;
+    border-radius: 25px;
+    background: #d4af37;
+    color: white;
+    cursor: pointer;
+}@keyframes muncul {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}.cover button {
+    animation: naik 2s ease;
+}
+
+@keyframes naik {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
